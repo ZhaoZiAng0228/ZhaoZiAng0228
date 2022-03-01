@@ -1,0 +1,16 @@
+{
+    "development": {
+        "username": "findHouse",
+        "password": "hss",
+        "database": "findhouse",
+        "host": "47.101.32.167",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "findHouse",
+        "password": "hss",
+        "database": "findhouse",
+        "host": "47.101.32.167",
+        "dialect": "mysql"
+    }
+}

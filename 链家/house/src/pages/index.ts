@@ -1,0 +1,5 @@
+export { default as Home } from './home'
+export { default as Ceshi } from './ceshi'
+export { default as Register } from './register'
+export { default as My } from './my'
+export { default as Login } from './login'

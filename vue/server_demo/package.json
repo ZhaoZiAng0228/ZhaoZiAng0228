@@ -1,0 +1,32 @@
+{
+  "name": "server_demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@element-plus/icons": "^0.0.11",
+    "@kangc/v-md-editor": "^2.3.12",
+    "axios": "^0.22.0",
+    "core-js": "^3.6.5",
+    "echarts": "^5.2.1",
+    "element-plus": "^1.1.0-beta.20",
+    "element-ui": "^2.15.6",
+    "js-cookie": "^3.0.1",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
+  }
+}

@@ -1,0 +1,13 @@
+module.exports = {
+    payConfig: {
+        appId: "2021000118638710",
+        //私钥
+        privateKey:"MIIEogIBAAKCAQEAib9T7CsKZSP836eW8BBc/xgSggXQKvUOtSr8g/mcN/MYqnTUJZRgFHFEd/zt19w/u9GAWSzonPYFMcbp7U3pMokOddhV8iUFyjutnRk0JMIieHlc/AiqJnOznY47xCHhwRUnli9WznPI1Efw3ZZWGLM1am1pDgruxXkU/tPuGdgcYUc/WFOHbjZakP9v+u9xH5g357eFZYWoNqd0SdPMjNmYF5OUGdNLSChrgnrt65VWlISj5z79qFZqNf5SKgWLFIC9Qp9qsB1BD/bUh4MRjatK7eX+9JZUlouhzc8mMnikgoYA3KADlJWfnfVg6uHzdr5Oe0aaKONCzkiHJGh+IQIDAQABAoIBAHAoWzrm6LXlkZbCLIIXsMD8ZsV72j2//1PARo9nBK4BwEm6iqp2n6zFdUyFo1upuDNDqE/z4ws6vowDPKG+WGyPcDjAB2r8fjRmVzydMvnjIJIbr3x/yZs5hjx5fWx7cgf3I56DuRis6g7+7L5gFIZUFOAtaebHPBeKOXAsO6jKPMGrObIoJR1A/Ro9kP2o64g4d+J2GchMeAR5B/yPMzM+O1GpTJYaKPkYVA8jLuXt7IOmTVyRST3Vej5DRFXqcdqkkroptiauiFPIJKO/+6ySIjQnevLSt6Vn6k2yldcXP9I3kxkt8CFplMGzw1cgvfWRIjrwRmzOmnR3e/yMPukCgYEA0jDNJagKe8ni3g1laeTlF+mjuR0HHHHyUavdqYotQsFVBQkA1yb4b73EOqv2YG4Y57+MBW8JBuP/+Vgx6PHjLRiaMnD+xSxDPu+SXtyhmir/qD6YmFX7jJzEfWhdK+huGtoInWymtDiHM7elB72+hwit5FFQ9RrzsKwn3nzKdCMCgYEAp8SwRp/NWi221GWdU/2GqcN6nv9HTBuCENmsCULQ4acgmmNNYqeKmeVwr/P3zkdgdjtJYjDLFAuHJ03SFCVOMBiik06H9R8fJNbTlcguLgyk3g5obw/CGTvcFFsFXcUluaKLPLCXFNCikxuNmz38jLScGO8BpC+Kp+On5Vx1tusCgYAc1tVO9V963JhkHzJq9Rz5yvTL0U/Id1noGsyvFmZfYmdn6XRUEOTFcCQcaLvFP1XrdjygAjwa1e2pKJCwhX/GEDoX8akDJK+VUwmiOmNx47RwQSZuwF1jTZ8oFcmy3JE+3euQrfexgpAKaIgcJ8ycenRhf0a8WpZVB0nxHO4qQQKBgBSeuSfFBmFaEwmh/6dOFtoQu6aFK8cv7lmR13I/8xp5BynSoLVKcF+f8qy9qKyC21lMyiU2aA9rp03uY660Mxr4PCss0MsQ6ywE93aGZx6j0TO1w6I65plhYRhjY5J148AgOUrZTYhyaDj6fvogsUS+Ah2Saro6Walu8rjfF1zHAoGAT6LIRB2P0Ce2KI2DVX+SFsINcqznsA3sodwCOJ/JepC3wn8zKzq9eLD66uYvrgT9I5JFGwnHTJTUyIPLZhKdGOoTzajdq4f8g3w5ReTUzPlGaNTpA4YzVls0i1AZ4IPFJ8hnxSdYbv9fQkGN5vtDf6w78SNf3Dggr0HZkGAv7oc=",// 私钥
+        //支付宝公钥
+        alipayPublicKey: "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkxlkCNUYpwfpHrQcIVW79LTe2+oUbgameNQuRZYssAawO+ixhQHQwmqqN88z837NpzSxGQiCLV41uI0ryiUg1r1A41lyAV395y9lf9HB0ff0LgvXEQy6espIpNzbJCnC9zgScaGLwaH5Ic16gdFIARu66eyi2AUHjFil/ZuCrq9FD+lcaSwjT8lFwaSf4ZGCg4pwqwSSfG364NMGc8+ZCdSH90Y5ms8UVNaseH4BTq7KID3Ye6uiLX72gt4JS5Xs4QGWhtrKmvQ8/yw00QhQvLCdTqDzB7uDqbZTRHeeqi50/auLDbN+z2WuFePVGpwrnDrZu3jn2ZfFdKSmhRx5pQIDAQAB",// 支付宝公钥（不是应用公钥）
+        signType: "RSA2", // RSA2
+        gateway: "https://openapi.alipaydev.com/gateway.do", // 网关地址
+        timeout: 5000, // 网关超时时间
+        camelcase: true, // 是否把网关返回的下划线 key 转换为驼峰写法
+    },
+};

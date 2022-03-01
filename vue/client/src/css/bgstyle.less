@@ -1,0 +1,100 @@
+// 定义样式变量
+
+// 白间模式
+@bgColor-daily: #e7eaee;
+@headerBgColor-daily:#fff;
+@textColor-daily:#000;
+@menuBgColor-daily:#fff;
+@catalogColor-daily:#fff;
+@catalogBackColor-daily:#f0f1f3;
+
+// 暗夜模式
+@bgColor-dark: #282c35;
+@headerBgColor-dark:#282c35;
+@textColor-dark:#fff;
+@menuBgColor-dark:#363c48;
+@catalogColor-dark:#363c48;
+@catalogBackColor-dark:#2F343F;
+// 模式切换  daily = 白天   dark = 黑天
+.styleChange(@theme) {
+    // 定义显示各种颜色
+    transition: all .5s;
+    //背景色
+    @bgColor: 'bgColor-@{theme}';
+    //头部背景色
+    @headerBgColor: 'headerBgColor-@{theme}';
+    //文字颜色
+    @textColor:'textColor-@{theme}';
+    //菜单背景色
+    @menuBgColor:'menuBgColor-@{theme}';
+    //目录字体颜色
+    @catalogColor:'catalogColor-@{theme}';
+    // 目录高亮背景颜色
+    @catalogBackColor:'catalogBackColor-@{theme}';
+    //----------------------------------------//
+    //样式 
+    background-color:@@bgColor;
+    color: @@textColor;
+    .header_nav{
+        background-color: @@headerBgColor;
+    }
+    .article_list_head,
+    .article_list_item,
+    .read_recommend_list,
+    .read_tag,
+    .pigeonhole_list,
+    .pigeonhole_recommend_list,
+    .pigeonhole_classify,
+    .knowledge_list_item,
+    .knowledge_recommend_list,
+    .knowledge_tag,.article_list_head,
+    .pigeonhole_tag,
+    .classify_tag,
+    .classify_list_head,
+    .classify_list_item,
+    .tag_list_head,
+    .tag_list_body,
+    .tag_list_item,
+    .detail_list,
+    .detail_list_item,
+    .detailknow_content,
+    .other_content,
+    .chat,
+    .item_con{
+        background-color: @@menuBgColor;
+    }
+    // .anchorsA,
+    // .anchorsAll{
+    //     color: @@catalogColor;
+    // }
+    // .anchorsActive,
+    // .anchorsAll{
+    //     background-color: @@catalogBackColor;
+    // }
+    .header_nav,
+    .item_header,
+    .items_box,
+    .read_recommend_list_header,
+    .read_tag,
+    .read_tag_list_header,
+    .pigeonhole_recommend_list_header,
+    .pigeonhole_tag,
+    .knowledge_recommend_list_header,
+    .knowledge_tag,
+    .classify_tag,
+    .classify_tag_list_header,
+    .detailknow_content{
+        border-bottom: 1px solid #5E636D;
+    }
+}
+
+// 夜间模式
+.night-mode-style {
+    .styleChange(dark);
+    
+}
+
+// 白间模式
+.mode-style {
+    .styleChange(daily);
+}
