@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react'
 // 我自己的window监听事件钩子
-import useEventListener from '@/hooks/use-event-listener'
+// import useEventListener from '@/hooks/use-event-listener'
 // 第三方的类名库，超级好用，喜欢～
 import classnames from 'classnames'
 // 引入表格组件，表格属性
 import { Table, TableProps } from 'antd'
 // 我自己封装的math方法，其实也就是import math from 'mathjs'里面的方法
-import math from '@/utils/math'
+// import math from '@/utils/math'
 // 组件专属样式，省的污染别人
 import './scroll-table.scss'
 
@@ -66,17 +66,17 @@ const ScrollTable: React.FC<ScrollTableProps> = React.memo(props => {
                 if (thead) {
                     const ParentHeight = parent.getBoundingClientRect().height
                     const TheadHeight = thead.getBoundingClientRect().height
-                    const height = math.subtract(ParentHeight, TheadHeight)
-                    setY(height)
+                    // const height = math.subtract(ParentHeight, TheadHeight)
+                    // setY(height)
                     setTimeout(() => {
                         const tbody = parent.getElementsByClassName('ant-table-body')[0]
                         if (tbody) {
-                            (tbody as HTMLElement).style.height = height + 'px';
+                            // (tbody as HTMLElement).style.height = height + 'px';
                         }
                         // 没数据的时候，请一定将“暂无数据”的UI图上下左右居中
                         const placeholder = parent.getElementsByClassName('ant-table-placeholder')[0]
                         if (placeholder) {
-                            (placeholder as HTMLElement).style.height = height + 'px'
+                            // (placeholder as HTMLElement).style.height = height + 'px'
                         }
                     }, 30)
                 }
@@ -91,7 +91,7 @@ const ScrollTable: React.FC<ScrollTableProps> = React.memo(props => {
     }, [handleResizeY])
 
     // 监听页面缩放，重新计算高度和宽度
-    useEventListener('resize', handleResizeY)
+    // useEventListener('resize', handleResizeY)
 
     const classes = classnames(className, {
         'C-scroll_table': true,
